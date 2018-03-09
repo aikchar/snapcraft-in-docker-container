@@ -12,7 +12,7 @@ steps:
         type: push
         candidate: '${{build_image}}'
         tag: '${{CF_BRANCH_TAG_NORMALIZED}}'
-        registry: docker-hub
+        registry: dockerhub
         # credentials:
         #     #make sure that you have a dockerUsername and dockerPassword define on the pipeline.
         #     username: '${{dockerUsername}}'
