@@ -11,9 +11,5 @@ steps:
         title: Pushing to Docker Registry (with credentials)
         type: push
         candidate: '${{build_image}}'
-        tag: '${{CF_BRANCH_TAG_NORMALIZED}}'
+        tag: latest
         registry: dockerhub
-        # credentials:
-        #     #make sure that you have a dockerUsername and dockerPassword define on the pipeline.
-        #     username: '${{dockerUsername}}'
-        #     password: '${{dockerPassword}}'
